@@ -13,16 +13,16 @@
       "geometry": {
         "default": "geometry.splashy"
       },
-      "render_controllers": [ "controller.render.bottle_anim" ],
-      "animations":{
-	"3rd":"animation.item.bottle",
-	"1st":"animation.item.first_person_bottle"
+      "render_controllers": ["controller.render.bottle_anim"],
+      "animations": {
+        "3rd": "animation.item.bottle",
+        "1st": "animation.item.first_person_bottle"
       },
-      "scripts":{
-	"animate":[
-	  {"3rd":"!c.is_first_person && !q.is_name_any('§§')"},
-	  {"1st":"c.is_first_person"}
-	]
+      "scripts": {
+        "animate": [
+          { "3rd": "!c.is_first_person && !q.is_name_any('§§')" },
+          { "1st": "c.is_first_person" }
+        ]
       }
     }
   }

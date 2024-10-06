@@ -2,17 +2,17 @@
     "format_version": 2,
     "header": {
         "description":"Actions n Stuff animation pack Modified by AvgZing to eliminate Oakridge: Survival Unhinged conflicts.",
-        "name": "Oakridge Modified Actions & Stuff §8(1.5.0)",
-        "uuid": "6a30f2d0-4da4-4a3c-815f-41500a551b93",
-        "version": [1, 5, 0],
+        "name": "Oakridge Modified Actions & Stuff §8(1.7.3)",
+        "uuid": "4a186eaf-0690-4796-8546-f1f0c5ca80c7",
+        "version": [1, 7, 3],
         "min_engine_version": [ 1, 20, 80 ]
     },
     "modules": [
         {
             "description": "ACT",
             "type": "resources",
-            "uuid": "cf041de2-d28e-4c88-a501-92424cc854b3",
-            "version": [1, 5, 0]
+            "uuid": "f1e20ba3-6a43-4da9-adda-6a5edf02544b",
+            "version": [1, 7, 3]
         }
     ]
 }
