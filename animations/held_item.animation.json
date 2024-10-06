@@ -1,1 +1,370 @@
-{"format_version":"1.8.0","animations":{"animation.item.first_person_ender_eye":{"loop":true,"bones":{"ender_eye":{"rotation":[28,-27,-145],"position":[-3,2,3.5],"scale":["1+math.sin(query.life_time*160+60)*-0.03","1.1+math.sin(query.life_time*160)*0.03","1+math.sin(query.life_time*160-60)*-0.03"]}}},"animation.item.bottle_position":{"loop":true,"bones":{"potion":{"position":[0.5,15.75,-2.75],"scale":0.83}}},"animation.item.brush":{"loop":"hold_on_last_frame","bones":{"brush":{"position":["c.item_slot=='main_hand'?0.5:-0.5",21,-5],"scale":0.7}}},"animation.item.first_person_brush":{"loop":"hold_on_last_frame","bones":{"brush":{"rotation":[-72,-11,250],"position":[-3,22.5,0]}}},"animation.item.lantern_bob":{"loop":true,"bones":{"rightItem":{"relative_to":{"rotation":"entity"},"rotation":["(math.sin(query.life_time*175)*-2.5)","1+(math.cos(query.life_time*175)*2.5)","(math.sin(query.life_time*175-25)*2.5)"],"position":[0.5,-2,1]}}},"animation.item.first_person_lantern":{"loop":true,"bones":{"rightItem":{"rotation":[42,45.5,-105],"position":[-0.5,-8,3.25],"scale":1.25}}},"animation.item.book":{"loop":true,"bones":{"book":{"rotation":[0,0,90],"position":[-0.26,19.5,-1],"scale":0.85}}},"animation.item.first_person_book":{"loop":true,"bones":{"book":{"rotation":[98,7.5,40],"position":[0.5,22,2],"scale":[0.9,1,0.9]},"sheet":{"position":[0,0,0.1]}}},"animation.item.mush":{"loop":true,"bones":{"mushroom":{"rotation":[90,0,0],"position":[0.5,22.5,-3],"scale":0.75}}},"animation.item.first_person_mush":{"loop":true,"bones":{"mushroom":{"rotation":[157.5,0,33.75],"position":[0,25,0],"scale":0.75}}},"animation.item.horn":{"loop":true,"bones":{"horn":{"rotation":[-5,0,0],"position":[1.01,-3,-2],"scale":0.9}}},"animation.item.first_person_horn":{"loop":true,"bones":{"horn":{"rotation":["-84+q.target_y_rotation",62,-50],"position":[0,0,0]}}},"animation.item.wield_shield":{"loop":true,"bones":{"shield":{"rotation":[90,0,"c.item_slot=='main_hand'?90:-90"],"position":[-1,9,8.5]}}},"animation.cns.raw_fish":{"loop":true,"bones":{"edible":{"rotation":[7.5,0,0],"position":[0,19,-5],"scale":5}}},"animation.cns.first_person_raw_fish":{"loop":true,"bones":{"edible":{"scale":0}}},"animation.item.first_person_raw_fish":{"loop":true,"bones":{"edible":{"rotation":[-20,0,-140],"position":[-3.5,23,-0.5]}}},"animation.item.rod":{"loop":true,"bones":{"rod":{"rotation":[95,0,0],"position":[0.5,21,0]}}},"animation.item.first_person_rod":{"loop":true,"bones":{"rod":{"rotation":["60+90",28,17.1],"position":[0,24.5,4.85]}}},"animation.item.gem":{"loop":true,"bones":{"emerald":{"rotation":[90,0,0],"position":[0.5,21,-3],"scale":0.5}}},"animation.item.first_person_gem":{"loop":true,"bones":{"emerald":{"rotation":[28,-15.45,193],"position":[0,22,2],"scale":0.8}}},"animation.item.torch_flame_target":{"loop":true,"bones":{"rightItem":{"rotation":[95,0,0],"position":[0.5,-3,-1.75]},"flame":{"relative_to":{"rotation":"entity"},"rotation":["math.clamp(q.rotation_to_camera(0),-45,0)","q.rotation_to_camera(1)-query.body_y_rotation",0]}}},"animation.item.first_person_torch":{"loop":true,"bones":{"flame":{"relative_to":{"rotation":"entity"},"rotation":[0,20,0],"position":[0.35,0,0.25],"scale":[1,1.2,1]},"rightItem":{"rotation":["60+90",28,17.1],"position":[0,0.5,4.85]}}},"animation.item.raw_fish":{"loop":true,"bones":{"edible":{"rotation":[7.5,0,0],"position":[0.5,21,-2.5]}}},"animation.item.ball":{"loop":true,"bones":{"rightItem":{"rotation":[21,8,-58],"position":[2.5,0,-10],"scale":5}}},"animation.item.bucket":{"loop":"hold_on_last_frame","bones":{"rightItem":{"rotation":[8,10,-1.15],"position":[0,-5,-4],"scale":0.75},"fluid":{"rotation":[-8,0,0]}}},"animation.item.bucket_villager":{"loop":true,"bones":{"rightItem":{"rotation":[90,0,0],"position":[0.5,-3,-1],"scale":0.75}}},"animation.item.first_person_bucket":{"loop":"hold_on_last_frame","bones":{"rightItem":{"rotation":[42,45.5,-105],"position":[2.5,-4,5]}}},"animation.item.pearl":{"loop":true,"bones":{"rightitem":{"rotation":[0,30,0],"position":[2.5,0,-15],"scale":5},"glint":{"relative_to":{"rotation":"entity"},"rotation":["q.rotation_to_camera(0)-5","-q.body_y_rotation+q.rotation_to_camera(1)",0]}}},"animation.item.slice":{"loop":true,"bones":{"emerald":{"rotation":[90,0,0],"position":[0.5,21,-3],"scale":0.5},"edible":{"rotation":[90,0,0],"position":[0.5,21,-4]}}},"animation.item.first_person_slice":{"loop":true,"bones":{"edible":{"rotation":[18,-8,-142],"position":[-7.5,27,-4.5]}}},"animation.item.basket":{"loop":"hold_on_last_frame","bones":{"basket":{"rotation":[0,"c.item_slot=='main_hand'?85:-85",0],"position":["c.item_slot=='main_hand'?-1.5:1.5",13.5,-2],"scale":0.9},"handle":{"rotation":[-20,0,0],"position":[0,-0.3,0],"scale":[0.96,1,1]}}},"animation.item.first_person.basket":{"loop":"hold_on_last_frame","bones":{"basket":{"rotation":[40,"c.item_slot=='main_hand'?42:-42","c.item_slot=='main_hand'?-110:110"],"position":["c.item_slot=='main_hand'?4:-4",23,4]}}},"animation.item.totem":{"loop":true,"bones":{"totem":{"rotation":[-270,"c.item_slot=='main_hand'?10:-10",-180],"position":["c.item_slot=='main_hand'?1:-1",22,-1.7],"scale":0.6}}},"animation.item.first_person.totem":{"loop":true,"bones":{"totem":{"rotation":[45,"c.item_slot=='main_hand'?-45:45","c.item_slot=='main_hand'?190:-190"],"position":[0,26,2],"scale":0.8},"outline":{"scale":"v.hurt"}}},"animation.item.mace":{"loop":"hold_on_last_frame","bones":{"mace":{"rotation":[90,0,0],"position":[0,22.5,4]}}},"animation.item.first_person.mace":{"loop":"hold_on_last_frame","bones":{"mace":{"rotation":[56.29944,57.67437,-67.87824],"position":[8,26,5]}}},"animation.item.wind":{"loop":true,"bones":{"ball":{"rotation":[0,0,20],"position":[0.5,22,-4]},"ring":{"relative_to":{"rotation":"entity"},"rotation":[0,0,0.01]}}},"animation.item.first_person.wind":{"loop":true,"bones":{"ball":{"rotation":[148,27,24],"position":[-3,24,0]}}}}}
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.item.first_person_ender_eye": {
+      "loop": true,
+      "bones": {
+        "ender_eye": {
+          "rotation": [28, -27, -145],
+          "position": [-3, 2, 3.5],
+          "scale": [
+            "1+math.sin(query.life_time*160+60)*-0.03",
+            "1.1+math.sin(query.life_time*160)*0.03",
+            "1+math.sin(query.life_time*160-60)*-0.03"
+          ]
+        }
+      }
+    },
+    "animation.item.bottle_position": {
+      "loop": true,
+      "bones": { "potion": { "position": [0.5, 15.75, -2.75], "scale": 0.83 } }
+    },
+    "animation.item.brush": {
+      "loop": "hold_on_last_frame",
+      "bones": {
+        "brush": {
+          "position": ["c.item_slot=='main_hand'?0.5:-0.5", 21, -5],
+          "scale": 0.7
+        }
+      }
+    },
+    "animation.item.first_person_brush": {
+      "loop": "hold_on_last_frame",
+      "bones": {
+        "brush": { "rotation": [-72, -11, 250], "position": [-3, 22.5, 0] }
+      }
+    },
+    "animation.item.lantern_bob": {
+      "loop": true,
+      "bones": {
+        "rightItem": {
+          "relative_to": { "rotation": "entity" },
+          "rotation": [
+            "(math.sin(query.life_time*175)*-2.5)",
+            "1+(math.cos(query.life_time*175)*2.5)",
+            "(math.sin(query.life_time*175-25)*2.5)"
+          ],
+          "position": [0.5, -2, 1]
+        }
+      }
+    },
+    "animation.item.first_person_lantern": {
+      "loop": true,
+      "bones": {
+        "rightItem": {
+          "rotation": [42, 45.5, -105],
+          "position": [-0.5, -8, 3.25],
+          "scale": 1.25
+        }
+      }
+    },
+    "animation.item.book": {
+      "loop": true,
+      "bones": {
+        "book": {
+          "rotation": [0, 0, 90],
+          "position": [-0.26, 19.5, -1],
+          "scale": 0.85
+        }
+      }
+    },
+    "animation.item.first_person_book": {
+      "loop": true,
+      "bones": {
+        "book": {
+          "rotation": [98, 7.5, 40],
+          "position": [0.5, 22, 2],
+          "scale": [0.9, 1, 0.9]
+        },
+        "sheet": { "position": [0, 0, 0.1] }
+      }
+    },
+    "animation.item.mush": {
+      "loop": true,
+      "bones": {
+        "mushroom": {
+          "rotation": [90, 0, 0],
+          "position": [0.5, 22.5, -3],
+          "scale": 0.75
+        }
+      }
+    },
+    "animation.item.first_person_mush": {
+      "loop": true,
+      "bones": {
+        "mushroom": {
+          "rotation": [157.5, 0, 33.75],
+          "position": [0, 25, 0],
+          "scale": 0.75
+        }
+      }
+    },
+    "animation.item.horn": {
+      "loop": true,
+      "bones": {
+        "horn": {
+          "rotation": [-5, 0, 0],
+          "position": [1.01, -3, -2],
+          "scale": 0.9
+        }
+      }
+    },
+    "animation.item.first_person_horn": {
+      "loop": true,
+      "bones": {
+        "horn": {
+          "rotation": ["-84+q.target_y_rotation", 62, -50],
+          "position": [0, 0, 0]
+        }
+      }
+    },
+    "animation.item.wield_shield": {
+      "loop": true,
+      "bones": {
+        "shield": {
+          "rotation": [90, 0, "c.item_slot=='main_hand'?90:-90"],
+          "position": [-1, 9, 8.5]
+        }
+      }
+    },
+    "animation.cns.raw_fish": {
+      "loop": true,
+      "bones": {
+        "edible": {
+          "rotation": [7.5, 0, 0],
+          "position": [0, 19, -5],
+          "scale": 5
+        }
+      }
+    },
+    "animation.cns.first_person_raw_fish": {
+      "loop": true,
+      "bones": { "edible": { "scale": 0 } }
+    },
+    "animation.item.first_person_raw_fish": {
+      "loop": true,
+      "bones": {
+        "edible": { "rotation": [-20, 0, -140], "position": [-3.5, 23, -0.5] }
+      }
+    },
+    "animation.item.rod": {
+      "loop": true,
+      "bones": { "rod": { "rotation": [95, 0, 0], "position": [0.5, 21, 0] } }
+    },
+    "animation.item.first_person_rod": {
+      "loop": true,
+      "bones": {
+        "rod": { "rotation": ["60+90", 28, 17.1], "position": [0, 24.5, 4.85] }
+      }
+    },
+    "animation.item.gem": {
+      "loop": true,
+      "bones": {
+        "emerald": {
+          "rotation": [90, 0, 0],
+          "position": [0.5, 21, -3],
+          "scale": 0.5
+        }
+      }
+    },
+    "animation.item.first_person_gem": {
+      "loop": true,
+      "bones": {
+        "emerald": {
+          "rotation": [28, -15.45, 193],
+          "position": [0, 22, 2],
+          "scale": 0.8
+        }
+      }
+    },
+    "animation.item.torch_flame_target": {
+      "loop": true,
+      "bones": {
+        "rightItem": { "rotation": [95, 0, 0], "position": [0.5, -3, -1.75] },
+        "flame": {
+          "relative_to": { "rotation": "entity" },
+          "rotation": [
+            "math.clamp(q.rotation_to_camera(0),-45,0)",
+            "q.rotation_to_camera(1)-query.body_y_rotation",
+            0
+          ]
+        }
+      }
+    },
+    "animation.item.first_person_torch": {
+      "loop": true,
+      "bones": {
+        "flame": {
+          "relative_to": { "rotation": "entity" },
+          "rotation": [0, 20, 0],
+          "position": [0.35, 0, 0.25],
+          "scale": [1, 1.2, 1]
+        },
+        "rightItem": {
+          "rotation": ["60+90", 28, 17.1],
+          "position": [0, 0.5, 4.85]
+        }
+      }
+    },
+    "animation.item.raw_fish": {
+      "loop": true,
+      "bones": {
+        "edible": { "rotation": [7.5, 0, 0], "position": [0.5, 21, -2.5] }
+      }
+    },
+    "animation.item.ball": {
+      "loop": true,
+      "bones": {
+        "rightItem": {
+          "rotation": [21, 8, -58],
+          "position": [2.5, 0, -10],
+          "scale": 5
+        }
+      }
+    },
+    "animation.item.bucket": {
+      "loop": "hold_on_last_frame",
+      "bones": {
+        "rightItem": {
+          "rotation": [8, 10, -1.15],
+          "position": [0, -5, -4],
+          "scale": 0.75
+        },
+        "fluid": { "rotation": [-8, 0, 0] }
+      }
+    },
+    "animation.item.bucket_villager": {
+      "loop": true,
+      "bones": {
+        "rightItem": {
+          "rotation": [90, 0, 0],
+          "position": [0.5, -3, -1],
+          "scale": 0.75
+        }
+      }
+    },
+    "animation.item.first_person_bucket": {
+      "loop": "hold_on_last_frame",
+      "bones": {
+        "rightItem": { "rotation": [42, 45.5, -105], "position": [2.5, -4, 5] }
+      }
+    },
+    "animation.item.pearl": {
+      "loop": true,
+      "bones": {
+        "rightitem": {
+          "rotation": [0, 30, 0],
+          "position": [2.5, 0, -15],
+          "scale": 5
+        },
+        "glint": {
+          "relative_to": { "rotation": "entity" },
+          "rotation": [
+            "q.rotation_to_camera(0)-5",
+            "-q.body_y_rotation+q.rotation_to_camera(1)",
+            0
+          ]
+        }
+      }
+    },
+    "animation.item.slice": {
+      "loop": true,
+      "bones": {
+        "emerald": {
+          "rotation": [90, 0, 0],
+          "position": [0.5, 21, -3],
+          "scale": 0.5
+        },
+        "edible": { "rotation": [90, 0, 0], "position": [0.5, 21, -4] }
+      }
+    },
+    "animation.item.first_person_slice": {
+      "loop": true,
+      "bones": {
+        "edible": { "rotation": [18, -8, -142], "position": [-7.5, 27, -4.5] }
+      }
+    },
+    "animation.item.basket": {
+      "loop": "hold_on_last_frame",
+      "bones": {
+        "basket": {
+          "rotation": [0, "c.item_slot=='main_hand'?85:-85", 0],
+          "position": ["c.item_slot=='main_hand'?-1.5:1.5", 13.5, -2],
+          "scale": 0.9
+        },
+        "handle": {
+          "rotation": [-20, 0, 0],
+          "position": [0, -0.3, 0],
+          "scale": [0.96, 1, 1]
+        }
+      }
+    },
+    "animation.item.first_person.basket": {
+      "loop": "hold_on_last_frame",
+      "bones": {
+        "basket": {
+          "rotation": [
+            40,
+            "c.item_slot=='main_hand'?42:-42",
+            "c.item_slot=='main_hand'?-110:110"
+          ],
+          "position": ["c.item_slot=='main_hand'?4:-4", 23, 4]
+        }
+      }
+    },
+    "animation.item.totem": {
+      "loop": true,
+      "bones": {
+        "totem": {
+          "rotation": [-270, "c.item_slot=='main_hand'?10:-10", -180],
+          "position": ["c.item_slot=='main_hand'?1:-1", 22, -1.7],
+          "scale": 0.6
+        }
+      }
+    },
+    "animation.item.first_person.totem": {
+      "loop": true,
+      "bones": {
+        "totem": {
+          "rotation": [
+            45,
+            "c.item_slot=='main_hand'?-45:45",
+            "c.item_slot=='main_hand'?190:-190"
+          ],
+          "position": [0, 26, 2],
+          "scale": 0.8
+        },
+        "outline": { "scale": "v.hurt" }
+      }
+    },
+    "animation.item.mace": {
+      "loop": "hold_on_last_frame",
+      "bones": { "mace": { "rotation": [90, 0, 0], "position": [0, 22.5, 4] } }
+    },
+    "animation.item.first_person.mace": {
+      "loop": "hold_on_last_frame",
+      "bones": {
+        "mace": {
+          "rotation": [56.29944, 57.67437, -67.87824],
+          "position": [8, 26, 5]
+        }
+      }
+    },
+    "animation.item.wind": {
+      "loop": true,
+      "bones": {
+        "ball": { "rotation": [0, 0, 20], "position": [0.5, 22, -4] },
+        "ring": {
+          "relative_to": { "rotation": "entity" },
+          "rotation": [0, 0, 0.01]
+        }
+      }
+    },
+    "animation.item.first_person.wind": {
+      "loop": true,
+      "bones": {
+        "ball": { "rotation": [148, 27, 24], "position": [-3, 24, 0] }
+      }
+    }
+  }
+}

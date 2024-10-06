@@ -1,1 +1,67 @@
-{"format_version":"1.8.0","minecraft:client_entity":{"description":{"identifier":"minecraft:wandering_trader","materials":{"default":"entity_alphatest_culling","outer_layer":"entity_alphatest"},"textures":{"default":"textures/entity/villager2/wandering_trader_oh"},"geometry":{"default":"geometry.wanderer_anim"},"scripts":{"scale":"0.9375"},"animations":{"base_pose":"animation.hex.base_pose_wanderer","target_potion":"animation.hex.potion_target","target":"animation.villager.target","blink":"animation.blink.0","raise_arms":"animation.villager.raise_arms","drink":"animation.wanderer.drink","arms_lock":"animation.hex.arms_lock","idle_0":"animation.villager.idle_anim_6","idle_1":"animation.villager.idle_anim_6","idle_timer":"animation.idle_timer_short","jump_timer":"animation.jump_timer","jump":"animation.villager.jump","fall":"animation.villager.fall","land":"animation.anthro.land_mob","vert_cap":"animation.villager.vertical_block","float":"animation.villager.floating","move":"animation.villager.walking","alarm":"animation.illager.sprint_evoker","scared":"animation.villager.scared","riding.legs":"animation.anthro.vil_rider","contraction":"animation.villager.contraction","controller_move":"controller.animation.wanderer.move","controller_land":"controller.animation.land","controller_jump":"controller.animation.jump","controller_fall":"controller.animation.fall"},"animation_controllers":[{"idle_anim":"controller.animation.entity.idle"},{"raise_arms":"controller.animation.villager_anim.raise_arms"},{"is_riding":"controller.animation.villager.ride"},{"target_ct":"controller.animation.witch.target"},{"on_fire":"controller.animation.villager_anim.on_fire"},{"general":"controller.animation.witch.base"}],"particle_effects":{"shiny":"act:shiny","combust":"act:combust_humanoid","fire":"act:on_fire_humanoid","potion_0":"act:potion_ring","potion_1":"act:potion_trnk","dust":"act:dust_medium","impact":"act:water_impact_mid","splash":"act:water_splash_mid","ripples":"act:water_ripples","sweat":"act:sweat"},"render_controllers":["controller.render.wanderer_oh"],"enable_attachables":true,"spawn_egg":{"texture":"spawn_egg_wandering_trader"}}}}
+{
+  "format_version": "1.8.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:wandering_trader",
+      "materials": {
+        "default": "entity_alphatest_culling",
+        "outer_layer": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/wandering_trader"
+      },
+      "geometry": { "default": "geometry.wanderer_anim" },
+      "scripts": { "scale": "0.9375" },
+      "animations": {
+        "base_pose": "animation.hex.base_pose_wanderer",
+        "target_potion": "animation.hex.potion_target",
+        "target": "animation.villager.target",
+        "blink": "animation.blink.0",
+        "raise_arms": "animation.villager.raise_arms",
+        "drink": "animation.wanderer.drink",
+        "arms_lock": "animation.hex.arms_lock",
+        "idle_0": "animation.villager.idle_anim_6",
+        "idle_1": "animation.villager.idle_anim_6",
+        "idle_timer": "animation.idle_timer_short",
+        "jump_timer": "animation.jump_timer",
+        "jump": "animation.villager.jump",
+        "fall": "animation.villager.fall",
+        "land": "animation.anthro.land_mob",
+        "vert_cap": "animation.villager.vertical_block",
+        "float": "animation.villager.floating",
+        "move": "animation.villager.walking",
+        "alarm": "animation.illager.sprint_evoker",
+        "scared": "animation.villager.scared",
+        "riding.legs": "animation.anthro.vil_rider",
+        "contraction": "animation.villager.contraction",
+        "controller_move": "controller.animation.wanderer.move",
+        "controller_land": "controller.animation.land",
+        "controller_jump": "controller.animation.jump",
+        "controller_fall": "controller.animation.fall"
+      },
+      "animation_controllers": [
+        { "idle_anim": "controller.animation.entity.idle" },
+        { "raise_arms": "controller.animation.villager_anim.raise_arms" },
+        { "is_riding": "controller.animation.villager.ride" },
+        { "target_ct": "controller.animation.witch.target" },
+        { "on_fire": "controller.animation.villager_anim.on_fire" },
+        { "general": "controller.animation.witch.base" }
+      ],
+      "particle_effects": {
+        "shiny": "act:shiny",
+        "combust": "act:combust_humanoid",
+        "fire": "act:on_fire_humanoid",
+        "potion_0": "act:potion_ring",
+        "potion_1": "act:potion_trnk",
+        "dust": "act:dust_medium",
+        "impact": "act:water_impact_mid",
+        "splash": "act:water_splash_mid",
+        "ripples": "act:water_ripples",
+        "sweat": "act:sweat"
+      },
+      "render_controllers": ["controller.render.wanderer_oh"],
+      "enable_attachables": true,
+      "spawn_egg": { "texture": "spawn_egg_wandering_trader" }
+    }
+  }
+}

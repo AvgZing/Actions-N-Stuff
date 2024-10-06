@@ -91,12 +91,6 @@
 		{"name":"sounds/mob/pufferfish/inflate2","volume":0.1}
 	    ]
 	},
-	"mob.skeleton.idle_anim":{
-	    "category":"hostile",
-	    "sounds":[
-		{"name":"sounds/mob/skeleton/ratchet","volume":0.3}
-	    ]
-	},
 	"mob.ravager.roar":{
 	    "__use_legacy_max_distance":"true",
 	    "category":"hostile",

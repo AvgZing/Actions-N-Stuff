@@ -1,1 +1,236 @@
-{"format_version":"1.10.0","animation_controllers":{"controller.animation.item.particles":{"states":{"default":{"particle_effects":[{"effect":"eff","locator":"lead_hold"}]}}},"controller.animation.in_use":{"states":{"default":{"transitions":[{"in_use":"q.main_hand_item_use_duration>0"}]},"in_use":{"blend_transition":0.2,"animations":["in_use"],"transitions":[{"default":"q.main_hand_item_use_duration==0&&q.any_animation_finished"}]}}},"controller.animation.drinking":{"states":{"default":{"transitions":[{"first_person":"c.is_first_person"},{"third_person":"1"}]},"first_person":{"transitions":[{"third_person":"!c.is_first_person"},{"drink_1st":"q.main_hand_item_use_duration>0.0f"}]},"third_person":{"transitions":[{"first_person":"c.is_first_person"},{"drink_3rd":"q.main_hand_item_use_duration>0.0f"}]},"drink_1st":{"blend_transition":0.2,"animations":["1st_drink"],"transitions":[{"first_person":"q.main_hand_item_use_duration==0.0f||!c.is_first_person"}]},"drink_3rd":{"blend_transition":0.25,"animations":["3rd_drink"],"transitions":[{"third_person":"q.main_hand_item_use_duration==0.0f||c.is_first_person"}]}}},"controller.animation.eating":{"states":{"default":{"transitions":[{"eat":"q.main_hand_item_use_duration>0.0f"}]},"eat":{"blend_transition":0.2,"animations":[{"1st_eat":"c.is_first_person"},{"3rd_eat":"!c.is_first_person"}],"transitions":[{"default":"q.main_hand_item_use_duration==0.0f"}]}}},"controller.animation.torch_perspective":{"initial_state":"first_person","states":{"first_person":{"animations":["1st_person_pos","flame_controller"],"transitions":[{"third_person":"!c.is_first_person"}]},"third_person":{"animations":["flame_target",{"flame_particles_controller":"!q.is_in_ui"}],"transitions":[{"first_person":"c.is_first_person"},{"is_prop":"q.is_name_any('§§')"}]},"is_prop":{"particle_effects":[{"effect":"fire"}]}}},"controller.animation.torch_flame":{"states":{"default":{"animations":["flame_0","flame_timer"],"transitions":[{"invert":"math.random_integer(0,1)&&q.any_animation_finished"},{"default":"q.any_animation_finished"}]},"invert":{"animations":["flame_1","flame_timer"],"transitions":[{"invert":"math.random_integer(0,1)&&q.any_animation_finished"},{"default":"q.any_animation_finished"}]}}},"controller.animation.torch_flame.particles":{"initial_state":"a_0","states":{"a_0":{"animations":["flame_0","flame_timer"],"particle_effects":[{"effect":"glow","locator":"lead_hold"},{"effect":"spark","locator":"lead_hold"}],"transitions":[{"b_1":"math.random_integer(0,1)&&q.any_animation_finished"},{"a_1":"q.any_animation_finished"}]},"a_1":{"animations":["flame_0","flame_timer"],"particle_effects":[{"effect":"glow","locator":"lead_hold"},{"effect":"spark","locator":"lead_hold"}],"transitions":[{"b_0":"math.random_integer(0,1)&&q.any_animation_finished"},{"a_0":"q.any_animation_finished"}]},"b_0":{"on_entry":["v.die_roll=math.random_integer(0,1);"],"animations":["flame_1","flame_timer"],"particle_effects":[{"effect":"glow","locator":"lead_hold"},{"effect":"spark","locator":"lead_hold"}],"transitions":[{"b_1":"math.random_integer(0,1)&&q.any_animation_finished"},{"a_1":"q.any_animation_finished"}]},"b_1":{"animations":["flame_1","flame_timer"],"particle_effects":[{"effect":"glow","locator":"lead_hold"},{"effect":"spark","locator":"lead_hold"}],"transitions":[{"b_0":"math.random_integer(0,1)&&q.any_animation_finished"},{"a_0":"q.any_animation_finished"}]}}},"controller.animation.book":{"states":{"default":{"transitions":[{"open":"q.ground_speed==0"}]},"open":{"animations":[{"1st_open":"c.is_first_person"},{"3rd_open":"!c.is_first_person"}],"transitions":[{"close":"q.ground_speed>0.3&&q.any_animation_finished"}]},"close":{"animations":[{"1st_close":"c.is_first_person"},{"3rd_close":"!c.is_first_person"}],"transitions":[{"default":"q.any_animation_finished"}]}}},"controller.animation.item.brush":{"states":{"default":{"transitions":[{"brush":"q.main_hand_item_use_duration>0"}]},"brush":{"blend_transition":0.2,"animations":["brush"],"transitions":[{"default":"q.main_hand_item_use_duration==0"}]}}},"controller.animation.item.spyglass":{"initial_state":"first_person","states":{"first_person":{"animations":["holding.1st"],"transitions":[{"third_person":"!c.is_first_person"}]},"third_person":{"animations":["holding"],"transitions":[{"first_person":"c.is_first_person"},{"third_person_scope":"q.main_hand_item_use_duration>0"}]},"third_person_scope":{"animations":["scoping.pos","scoping"],"transitions":[{"first_person":"c.is_first_person"},{"third_person":"q.main_hand_item_use_duration==0"}]}}},"controller.animation.item.wind":{"states":{"default":{"transitions":[{"gust":"q.vertical_speed>9"}]},"gust":{"particle_effects":[{"effect":"gust"}],"transitions":[{"default":"q.vertical_speed<5||q.is_on_ground"}]}}}}}
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.item.particles": {
+      "states": {
+        "default": {
+          "particle_effects": [{ "effect": "eff", "locator": "lead_hold" }]
+        }
+      }
+    },
+    "controller.animation.in_use": {
+      "states": {
+        "default": {
+          "transitions": [{ "in_use": "q.main_hand_item_use_duration>0" }]
+        },
+        "in_use": {
+          "blend_transition": 0.2,
+          "animations": ["in_use"],
+          "transitions": [
+            {
+              "default": "q.main_hand_item_use_duration==0&&q.any_animation_finished"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.drinking": {
+      "states": {
+        "default": {
+          "transitions": [
+            { "first_person": "c.is_first_person" },
+            { "third_person": "1" }
+          ]
+        },
+        "first_person": {
+          "transitions": [
+            { "third_person": "!c.is_first_person" },
+            { "drink_1st": "q.main_hand_item_use_duration>0.0f" }
+          ]
+        },
+        "third_person": {
+          "transitions": [
+            { "first_person": "c.is_first_person" },
+            { "drink_3rd": "q.main_hand_item_use_duration>0.0f" }
+          ]
+        },
+        "drink_1st": {
+          "blend_transition": 0.2,
+          "animations": ["1st_drink"],
+          "transitions": [
+            {
+              "first_person": "q.main_hand_item_use_duration==0.0f||!c.is_first_person"
+            }
+          ]
+        },
+        "drink_3rd": {
+          "blend_transition": 0.25,
+          "animations": ["3rd_drink"],
+          "transitions": [
+            {
+              "third_person": "q.main_hand_item_use_duration==0.0f||c.is_first_person"
+            }
+          ]
+        }
+      }
+    },
+    "controller.animation.eating": {
+      "states": {
+        "default": {
+          "transitions": [{ "eat": "q.main_hand_item_use_duration>0.0f" }]
+        },
+        "eat": {
+          "blend_transition": 0.2,
+          "animations": [
+            { "1st_eat": "c.is_first_person" },
+            { "3rd_eat": "!c.is_first_person" }
+          ],
+          "transitions": [{ "default": "q.main_hand_item_use_duration==0.0f" }]
+        }
+      }
+    },
+    "controller.animation.torch_perspective": {
+      "initial_state": "first_person",
+      "states": {
+        "first_person": {
+          "animations": ["1st_person_pos", "flame_controller"],
+          "transitions": [{ "third_person": "!c.is_first_person" }]
+        },
+        "third_person": {
+          "animations": [
+            "flame_target",
+            { "flame_particles_controller": "!q.is_in_ui" }
+          ],
+          "transitions": [
+            { "first_person": "c.is_first_person" },
+            { "is_prop": "q.is_name_any('§§')" }
+          ]
+        },
+        "is_prop": { "particle_effects": [{ "effect": "fire" }] }
+      }
+    },
+    "controller.animation.torch_flame": {
+      "states": {
+        "default": {
+          "animations": ["flame_0", "flame_timer"],
+          "transitions": [
+            { "invert": "math.random_integer(0,1)&&q.any_animation_finished" },
+            { "default": "q.any_animation_finished" }
+          ]
+        },
+        "invert": {
+          "animations": ["flame_1", "flame_timer"],
+          "transitions": [
+            { "invert": "math.random_integer(0,1)&&q.any_animation_finished" },
+            { "default": "q.any_animation_finished" }
+          ]
+        }
+      }
+    },
+    "controller.animation.torch_flame.particles": {
+      "initial_state": "a_0",
+      "states": {
+        "a_0": {
+          "animations": ["flame_0", "flame_timer"],
+          "particle_effects": [
+            { "effect": "glow", "locator": "lead_hold" },
+            { "effect": "spark", "locator": "lead_hold" }
+          ],
+          "transitions": [
+            { "b_1": "math.random_integer(0,1)&&q.any_animation_finished" },
+            { "a_1": "q.any_animation_finished" }
+          ]
+        },
+        "a_1": {
+          "animations": ["flame_0", "flame_timer"],
+          "particle_effects": [
+            { "effect": "glow", "locator": "lead_hold" },
+            { "effect": "spark", "locator": "lead_hold" }
+          ],
+          "transitions": [
+            { "b_0": "math.random_integer(0,1)&&q.any_animation_finished" },
+            { "a_0": "q.any_animation_finished" }
+          ]
+        },
+        "b_0": {
+          "on_entry": ["v.die_roll=math.random_integer(0,1);"],
+          "animations": ["flame_1", "flame_timer"],
+          "particle_effects": [
+            { "effect": "glow", "locator": "lead_hold" },
+            { "effect": "spark", "locator": "lead_hold" }
+          ],
+          "transitions": [
+            { "b_1": "math.random_integer(0,1)&&q.any_animation_finished" },
+            { "a_1": "q.any_animation_finished" }
+          ]
+        },
+        "b_1": {
+          "animations": ["flame_1", "flame_timer"],
+          "particle_effects": [
+            { "effect": "glow", "locator": "lead_hold" },
+            { "effect": "spark", "locator": "lead_hold" }
+          ],
+          "transitions": [
+            { "b_0": "math.random_integer(0,1)&&q.any_animation_finished" },
+            { "a_0": "q.any_animation_finished" }
+          ]
+        }
+      }
+    },
+    "controller.animation.book": {
+      "states": {
+        "default": { "transitions": [{ "open": "q.ground_speed==0" }] },
+        "open": {
+          "animations": [
+            { "1st_open": "c.is_first_person" },
+            { "3rd_open": "!c.is_first_person" }
+          ],
+          "transitions": [
+            { "close": "q.ground_speed>0.3&&q.any_animation_finished" }
+          ]
+        },
+        "close": {
+          "animations": [
+            { "1st_close": "c.is_first_person" },
+            { "3rd_close": "!c.is_first_person" }
+          ],
+          "transitions": [{ "default": "q.any_animation_finished" }]
+        }
+      }
+    },
+    "controller.animation.item.brush": {
+      "states": {
+        "default": {
+          "transitions": [{ "brush": "q.main_hand_item_use_duration>0" }]
+        },
+        "brush": {
+          "blend_transition": 0.2,
+          "animations": ["brush"],
+          "transitions": [{ "default": "q.main_hand_item_use_duration==0" }]
+        }
+      }
+    },
+    "controller.animation.item.spyglass": {
+      "initial_state": "first_person",
+      "states": {
+        "first_person": {
+          "animations": ["holding.1st"],
+          "transitions": [{ "third_person": "!c.is_first_person" }]
+        },
+        "third_person": {
+          "animations": ["holding"],
+          "transitions": [
+            { "first_person": "c.is_first_person" },
+            { "third_person_scope": "q.main_hand_item_use_duration>0" }
+          ]
+        },
+        "third_person_scope": {
+          "animations": ["scoping.pos", "scoping"],
+          "transitions": [
+            { "first_person": "c.is_first_person" },
+            { "third_person": "q.main_hand_item_use_duration==0" }
+          ]
+        }
+      }
+    },
+    "controller.animation.item.wind": {
+      "states": {
+        "default": { "transitions": [{ "gust": "q.vertical_speed>9" }] },
+        "gust": {
+          "particle_effects": [{ "effect": "gust" }],
+          "transitions": [{ "default": "q.vertical_speed<5||q.is_on_ground" }]
+        }
+      }
+    }
+  }
+}
