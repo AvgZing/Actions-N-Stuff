@@ -1,1 +1,71 @@
-{"format_version":"1.10.0","minecraft:client_entity":{"description":{"identifier":"minecraft:pig","min_engine_version":"1.8.0","materials":{"default":"entity","cull":"entity_alphatest_culling","saddle":"entity_alphatest"},"textures":{"default":"textures/entity/pig/0"},"geometry":{"default":"geometry.pig_anim"},"animations":{"look_at_target":"animation.local_space.target","body_rotate":"animation.quadruped.rotation_small","bob":"animation.quadruped.bob","idle_0":"animation.pig_idle.anim_0","idle_1":"animation.pig_idle.anim_1","idle_2":"animation.pig_idle.anim_2","idle_timer":"animation.idle_timer","blink":"animation.step.blink","baby_transform":"animation.pig.baby_transform","swim":"animation.quadruped.swim_small","walk":"animation.quadruped.pig_walk","run":"animation.quadruped.goat_run","jump_timer":"animation.jump_timer","jump":"animation.quadruped.jump","fall":"animation.quadruped.fall","land":"animation.quadruped.land","controller_rotation":"controller.animation.quadruped_rotation","controller_ridden":"controller.animation.entity.ridden","controller_in_air":"controller.animation.in_air","controller_jump":"controller.animation.quadruped_up","controller_fall":"controller.animation.quadruped_dn","controller_land":"controller.animation.quadruped_land","controller_move":"controller.animation.pig_movement","controller_idle":"controller.animation.entity.idle_peaceful","controller_fire":"controller.animation.entity.on_fire"},"scripts":{"animate":["controller_move","controller_idle","controller_fire","controller_in_air","controller_ridden","controller_rotation","look_at_target","bob","blink",{"baby_transform":"query.is_baby"}]},"particle_effects":{"dust":"act:dust_medium","fire":"act:on_fire_small","combust":"act:combust_tiny","impact":"act:water_impact_mid","splash":"act:water_splash_mid","ripples":"act:water_ripples"},"sound_effects":{"snort":"mob.pig.say"},"render_controllers":["controller.render.pig_anim"],"spawn_egg":{"texture":"spawn_egg","texture_index":2}}}}
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:pig",
+      "min_engine_version": "1.8.0",
+      "materials": {
+        "default": "entity",
+        "cull": "entity_alphatest_culling",
+        "saddle": "entity_alphatest"
+      },
+      "textures": {
+        "default": "textures/entity/pig/pig",
+        "saddled": "textures/entity/pig/pig_saddle"
+      },
+      "geometry": { "default": "geometry.pig_anim" },
+      "animations": {
+        "look_at_target": "animation.local_space.target",
+        "body_rotate": "animation.quadruped.rotation_small",
+        "bob": "animation.quadruped.bob",
+        "idle_0": "animation.pig_idle.anim_0",
+        "idle_1": "animation.pig_idle.anim_1",
+        "idle_2": "animation.pig_idle.anim_2",
+        "idle_timer": "animation.idle_timer",
+        "blink": "animation.step.blink",
+        "baby_transform": "animation.pig.baby_transform",
+        "swim": "animation.quadruped.swim_small",
+        "walk": "animation.quadruped.pig_walk",
+        "run": "animation.quadruped.goat_run",
+        "jump_timer": "animation.jump_timer",
+        "jump": "animation.quadruped.jump",
+        "fall": "animation.quadruped.fall",
+        "land": "animation.quadruped.land",
+        "controller_rotation": "controller.animation.quadruped_rotation",
+        "controller_ridden": "controller.animation.entity.ridden",
+        "controller_in_air": "controller.animation.in_air",
+        "controller_jump": "controller.animation.quadruped_up",
+        "controller_fall": "controller.animation.quadruped_dn",
+        "controller_land": "controller.animation.quadruped_land",
+        "controller_move": "controller.animation.pig_movement",
+        "controller_idle": "controller.animation.entity.idle_peaceful",
+        "controller_fire": "controller.animation.entity.on_fire"
+      },
+      "scripts": {
+        "animate": [
+          "controller_move",
+          "controller_idle",
+          "controller_fire",
+          "controller_in_air",
+          "controller_ridden",
+          "controller_rotation",
+          "look_at_target",
+          "bob",
+          "blink",
+          { "baby_transform": "query.is_baby" }
+        ]
+      },
+      "particle_effects": {
+        "dust": "act:dust_medium",
+        "fire": "act:on_fire_small",
+        "combust": "act:combust_tiny",
+        "impact": "act:water_impact_mid",
+        "splash": "act:water_splash_mid",
+        "ripples": "act:water_ripples"
+      },
+      "sound_effects": { "snort": "mob.pig.say" },
+      "render_controllers": ["controller.render.pig_anim"],
+      "spawn_egg": { "texture": "spawn_egg", "texture_index": 2 }
+    }
+  }
+}

@@ -1,1 +1,72 @@
-{"format_version":"1.10.0","minecraft:client_entity":{"description":{"identifier":"minecraft:zombie","min_engine_version":"1.8.0","materials":{"default":"entity"},"textures":{"default":"textures/entity/zombie/zombie"},"geometry":{"default":"geometry.zombie_anim"},"scripts":{"pre_animation":["0;"],"initialize":["variable.pose=math.random_integer(0,7);"],"animate":["controller_pose","controller_in_air","controller_idle","controller_fire","controller_riding","controller_attack","look_at_target"]},"animations":{"humanoid_big_head":"animation.humanoid.big_head","look_at_target":"animation.humanoid.look_at_target.default","pose_0":"animation.zombie.idle_pose_0","pose_1":"animation.zombie.idle_pose_1","pose_2":"animation.zombie.idle_pose_2","pose_3":"animation.zombie.idle_pose_3","idle_0":"animation.zombie.idle_anim_0","idle_1":"animation.zombie.idle_anim_1","idle_timer":"animation.idle_timer","move":"animation.zombie.move","move_baby":"animation.zombie.move_baby","move_in_water":"animation.zombie.move_in_water","move_raised_arms":"animation.zombie.move_raised_arms","jump_timer":"animation.jump_timer","jump":"animation.zombie.jump","fall":"animation.zombie.fall","land":"animation.anthro.land_mob","vert_cap":"animation.zombie.vert_cap","has_target":"animation.zombie.has_target","attack":"animation.zombie.attack","riding.legs":"animation.humanoid.riding.legs","controller_in_air":"controller.animation.in_air","controller_jump":"controller.animation.jump","controller_fall":"controller.animation.fall","controller_land":"controller.animation.land","controller_idle":"controller.animation.entity.idle","controller_pose":"controller.animation.zombie.pose","controller_move":"controller.animation.zombie.move","controller_move.baby":"controller.animation.zombie.move.baby","controller_move.raised_arms":"controller.animation.zombie.move.raised_arms","controller_aggro":"controller.animation.zombie.aggro","controller_fire":"controller.animation.entity.on_fire","controller_attack":"controller.animation.entity.attack","controller_riding":"controller.animation.entity.riding"},"particle_effects":{"fire":"act:on_fire_humanoid_scale","combust":"act:combust_humanoid_scale","impact":"act:water_impact_mid","splash":"act:water_splash_mid","ripples":"act:water_ripples","dust":"act:dust_medium"},"render_controllers":["controller.render.entity_oh"],"enable_attachables":true,"spawn_egg":{"texture":"spawn_egg","texture_index":12}}}}
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "minecraft:zombie",
+      "min_engine_version": "1.8.0",
+      "materials": { "default": "entity" },
+      "textures": { "default": "textures/entity/zombie/zombie" },
+      "geometry": { "default": "geometry.zombie_anim" },
+      "scripts": {
+        "pre_animation": ["0;"],
+        "initialize": ["variable.pose=math.random_integer(0,7);"],
+        "animate": [
+          "controller_pose",
+          "controller_in_air",
+          "controller_idle",
+          "controller_fire",
+          "controller_riding",
+          "controller_attack",
+          "look_at_target"
+        ]
+      },
+      "animations": {
+        "humanoid_big_head": "animation.humanoid.big_head",
+        "look_at_target": "animation.humanoid.look_at_target.default",
+        "pose_0": "animation.zombie.idle_pose_0",
+        "pose_1": "animation.zombie.idle_pose_1",
+        "pose_2": "animation.zombie.idle_pose_2",
+        "pose_3": "animation.zombie.idle_pose_3",
+        "idle_0": "animation.zombie.idle_anim_0",
+        "idle_1": "animation.zombie.idle_anim_1",
+        "idle_timer": "animation.idle_timer",
+        "move": "animation.zombie.move",
+        "move_baby": "animation.zombie.move_baby",
+        "move_in_water": "animation.zombie.move_in_water",
+        "move_raised_arms": "animation.zombie.move_raised_arms",
+        "jump_timer": "animation.jump_timer",
+        "jump": "animation.zombie.jump",
+        "fall": "animation.zombie.fall",
+        "land": "animation.anthro.land_mob",
+        "vert_cap": "animation.zombie.vert_cap",
+        "has_target": "animation.zombie.has_target",
+        "attack": "animation.zombie.attack",
+        "riding.legs": "animation.humanoid.riding.legs",
+        "controller_in_air": "controller.animation.in_air",
+        "controller_jump": "controller.animation.jump",
+        "controller_fall": "controller.animation.fall",
+        "controller_land": "controller.animation.land",
+        "controller_idle": "controller.animation.entity.idle",
+        "controller_pose": "controller.animation.zombie.pose",
+        "controller_move": "controller.animation.zombie.move",
+        "controller_move.baby": "controller.animation.zombie.move.baby",
+        "controller_move.raised_arms": "controller.animation.zombie.move.raised_arms",
+        "controller_aggro": "controller.animation.zombie.aggro",
+        "controller_fire": "controller.animation.entity.on_fire",
+        "controller_attack": "controller.animation.entity.attack",
+        "controller_riding": "controller.animation.entity.riding"
+      },
+      "particle_effects": {
+        "fire": "act:on_fire_humanoid_scale",
+        "combust": "act:combust_humanoid_scale",
+        "impact": "act:water_impact_mid",
+        "splash": "act:water_splash_mid",
+        "ripples": "act:water_ripples",
+        "dust": "act:dust_medium"
+      },
+      "render_controllers": ["controller.render.entity_oh"],
+      "enable_attachables": true,
+      "spawn_egg": { "texture": "spawn_egg", "texture_index": 12 }
+    }
+  }
+}
