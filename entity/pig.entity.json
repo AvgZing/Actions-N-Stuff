@@ -9,10 +9,7 @@
         "cull": "entity_alphatest_culling",
         "saddle": "entity_alphatest"
       },
-      "textures": {
-        "default": "textures/entity/pig/pig",
-        "saddled": "textures/entity/pig/pig_saddle"
-      },
+      "textures": { "default": "textures/entity/pig/0" },
       "geometry": { "default": "geometry.pig_anim" },
       "animations": {
         "look_at_target": "animation.local_space.target",
