@@ -1,3 +1,7 @@
+# Archived Repository
+I expected Actions-N-Stuff to be public; now that it's a marketplace addon, this upkeep is no longer feasible. 
+
+
 # Actions-N-Stuff
 AvgZing's modified version of the Actions N Stuff 1.0.2 Beta for the Oakridge: Survival Unhinged Server. This eliminates unnecesary pack conflicts with Oakridge modifications. 
 
